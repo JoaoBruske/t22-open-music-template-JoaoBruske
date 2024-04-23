@@ -1,0 +1,26 @@
+header {
+height: 144px;
+  border-bottom: solid 3px var(--color-brand-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-3);
+  line-height: var(--line-height-5);
+  color: var(--color-gray-2);
+}
+header span{
+  color: var(--color-brand-1);
+}
+
+header button {
+  width: 44px ;
+  height: 36px;
+  background-image: url(../assets/icons/moon-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+}

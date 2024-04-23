@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --color-brand-1: #6f00ff;
+  --color-brand-2: #8629ff;
+  --color-gray-1: #15171a;
+  --color-gray-2: #212529;
+  --color-gray-3: #2b2f33;
+  --color-gray-4: #ced4da;
+  --color-grey-5: #dee2e6;
+  --color-grey-6: #f1f3f5;
+  --color-grey-7: #f8f9fa;
+  --color-grey-8: #fdfeff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  --font-size-1: 1rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: 1.375rem;
+  --font-size-4: 1.5rem;
+  --font-size-5: 2.5rem;
+
+  --font-weight-1: 400;
+  --font-weight-2: 500;
+  --font-weight-3: 600;
+
+  --line-height-1: calc(var(--font-size-1) * 1.21);
+  --line-height-2: calc(var(--font-size-2) * 1.21);
+  --line-height-3: calc(var(--font-size-3) * 1.21);
+  --line-height-4: calc(var(--font-size-4) * 1.21);
+  --line-height-5: calc(var(--font-size-5) * 1.21);
+}
+
+body{
+  width: 100%;
+  max-width: 1024px;
+  padding: 0 10px;
+  margin: auto;
+  background-color: var(--color-grey-8);
+}
