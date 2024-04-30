@@ -1,0 +1,38 @@
+.genres {
+  padding: 16px 0;
+}
+.genres h2 {
+  padding: 16px 0;
+  margin-bottom: 14px;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-3);
+  line-height: var(--line-height-4);
+}
+
+.genres ul {
+  padding: 16px 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.genres ul li button {
+  padding: 10px 12px;
+  border: solid 1px var(--color-gray-6);
+  border-radius: 4px;
+  background-color: var(--color-gray-6);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-2);
+  line-height: var(--line-height-1);
+}
+
+.genres ul li button:hover {
+  border-color: var(--color-gray-3);
+}
+
+.genres ul li button:focus {
+  background-color: var(--color-gray-2);
+  border-color: var(--color-gray-2);
+  color: var(--color-gray-7);
+}

@@ -1,0 +1,75 @@
+.albums {
+  padding-bottom: 32px;
+}
+.albums h2 {
+  padding: 32px 0px;
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-4);
+  font-weight: var(--font-weight-3);
+  color: var(--color-gray-2);
+}
+.container__albums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  background-color: var(--color-gray-7);
+}
+.card:hover {
+  background-color: var(--color-gray-6);
+}
+.card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__album {
+  padding: 5px 16px;
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+  font-weight: var(--font-weight-3);
+  color: var(--color-gray-2);
+}
+
+.card__artist,
+.card__genre {
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-1);
+  font-weight: var(--font-weight-1);
+  color: var(--color-gray-3);
+}
+.card__details1 {
+  padding: 4px 16px;
+}
+.card__details2 {
+  padding: 16px;
+}
+
+.card__price {
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-2);
+  font-weight: var(--font-weight-3);
+  color: var(--color-gray-2);
+}
+
+.card__button {
+  height: 40px;
+  padding: 0 10px;
+  border: solid 1px var(--color-brand-2);
+  border-radius: 4px;
+  background-color: var(--color-brand-2);
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-1);
+  font-weight: var(--font-weight-2);
+  color: white;
+}
+
+.card__button:hover {
+  background-color: var(--color-brand-1);
+}

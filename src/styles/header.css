@@ -1,9 +1,13 @@
 header {
-height: 144px;
-  border-bottom: solid 3px var(--color-brand-2);
+  width: calc(100% - 96px);
+  max-width: 1024px;
+  height: 144px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: solid 3px var(--color-brand-2);
+  position: fixed;
+  background-color: var(--color-gray-8);
 }
 
 header h1 {
@@ -12,12 +16,12 @@ header h1 {
   line-height: var(--line-height-5);
   color: var(--color-gray-2);
 }
-header span{
+header span {
   color: var(--color-brand-1);
 }
 
 header button {
-  width: 44px ;
+  width: 44px;
   height: 36px;
   background-image: url(../assets/icons/moon-icon.svg);
   background-repeat: no-repeat;
