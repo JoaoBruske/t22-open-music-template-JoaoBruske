@@ -1,6 +1,9 @@
-export function animaCor() {
-  const inputRange = document.querySelector('input[type = "range"]');
-  inputRange.addEventListener("input", () => {
-    inputRange.style.background = `linear-gradient(to right, var(--color-brand-1) 0%, var(--color-brand-1) ${inputRange.value}%, var(--color-gray-5) ${inputRange.value}%, var(--color-gray-5) 100%)`;
+export function applyInputRangeStyle() {
+  const inputRange = document.querySelector("[type='range']");
+
+  inputRange.addEventListener("input", (event) => {
+    const currentInputValue = event.target.value;
+    const runnableTrackProgress = (currentInputValue / inputRange.max) * 100;
+    inputRange.style.background = `linear-gradient(to right, var(--color-brand-1) ${runnableTrackProgress}%, var(--color-gray-5) ${runnableTrackProgress}%)`;
   });
 }

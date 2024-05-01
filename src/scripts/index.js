@@ -1,3 +1,7 @@
-import { animaCor } from "./inputRange.js"
+import { applyInputRangeStyle } from "./inputRange.js";
+import { albumList } from "./albumList.js";
+import { renderiza } from "./renderiza.js";
 
-animaCor()
+applyInputRangeStyle();
+
+renderiza(albumList);
