@@ -7,6 +7,10 @@
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-3);
   line-height: var(--line-height-4);
+  color: var(--color-gray-2);
+}
+.genres h2.darkMode {
+  color: var(--color-gray-7);
 }
 
 .genres ul {
@@ -25,6 +29,8 @@
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-2);
   line-height: var(--line-height-1);
+  color: var(--color-gray-3);
+  cursor: pointer;
 }
 
 .genres ul li button:hover {
@@ -35,4 +41,20 @@
   background-color: var(--color-gray-2);
   border-color: var(--color-gray-2);
   color: var(--color-gray-7);
+}
+
+.genres ul li button.darkMode {
+  border: solid 1px var(--color-gray-2);
+  background-color: var(--color-gray-2);
+  color: var(--color-gray-6);
+}
+
+.genres ul li button.darkMode:hover {
+  border-color: var(--color-gray-6);
+}
+
+.genres ul li button.darkMode:focus {
+  background-color: var(--color-gray-7);
+  border-color: var(--color-gray-7);
+  color: var(--color-gray-2);
 }

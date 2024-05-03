@@ -20,8 +20,6 @@ export function criaCards(album) {
 
   /* Configura classes e atributos */
   card.classList.add("card");
-  cardImg.setAttribute("src", img);
-  cardImg.setAttribute("alt", title);
   cardAlbum.classList.add("card__album");
   cardDetails1.classList.add("card__details1");
   cardArtist.classList.add("card__artist");
@@ -30,12 +28,22 @@ export function criaCards(album) {
   cardPrice.classList.add("card__price");
   cardButton.classList.add("card__button");
 
+  /* Configura atributos */
+  card.setAttribute("data-theme", "");
+  cardImg.setAttribute("src", img);
+  cardImg.setAttribute("alt", title);
+  cardAlbum.setAttribute("data-theme", "");
+  cardArtist.setAttribute("data-theme", "");
+  cardGenre.setAttribute("data-theme", "");
+  cardPrice.setAttribute("data-theme", "");
+  cardButton.setAttribute("data-theme", "");
+
   /* Adiciona conteúdo */
   cardAlbum.innerText = title;
   cardArtist.innerText = band;
   cardGenre.innerText = genre;
-  cardPrice.innerText = ('R$ ' + price).replace('.',',');
-  cardButton.innerText = 'Comprar'
+  cardPrice.innerText = ("R$ " + price).replace(".", ",");
+  cardButton.innerText = "Comprar";
 
   return card;
 }

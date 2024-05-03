@@ -9,15 +9,24 @@ header {
   position: fixed;
   background-color: var(--color-gray-8);
 }
-
+header.darkMode {
+  border-bottom: solid 3px var(--color-brand-1);
+  background-color: var(--color-gray-1);
+}
 header h1 {
   font-size: var(--font-size-5);
   font-weight: var(--font-weight-3);
   line-height: var(--line-height-5);
   color: var(--color-gray-2);
 }
+header h1.darkMode {
+  color: var(--color-gray-7);
+}
 header span {
   color: var(--color-brand-1);
+}
+header span.darkMode {
+  color: var(--color-brand-2);
 }
 
 header button {
@@ -27,4 +36,11 @@ header button {
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
+  background-color: var(--color-gray-6);
+  cursor: pointer;
+}
+
+header button.darkMode {
+  background-image: url(../assets/icons/sun-icon.svg);
+  background-color: var(--color-gray-3);
 }

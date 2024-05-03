@@ -38,6 +38,9 @@ body {
   margin: auto;
   background-color: var(--color-gray-8);
 }
+body.darkMode {
+  background-color: var(--color-gray-1);
+}
 
 main {
   padding-top: 144px;

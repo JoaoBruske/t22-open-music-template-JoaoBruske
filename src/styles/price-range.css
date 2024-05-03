@@ -16,15 +16,24 @@
   line-height: var(--line-height-4);
   color: var(--color-gray-2);
 }
+.price h2.darkMode {
+  color: var(--color-gray-7);
+}
 .price p {
   font-size: var(--font-size-3);
   font-weight: var(--font-weight-3);
   line-height: var(--line-height-3);
   color: var(--color-gray-2);
 }
+.price p.darkMode {
+  color: var(--color-gray-7);
+}
 
 .price p span {
   color: var(--color-brand-1);
+}
+.price p span.darkMode {
+  color: var(--color-brand-2);
 }
 
 .price input {
@@ -51,4 +60,16 @@
   border-radius: 50%;
   background: #fdfeff;
   cursor: pointer;
+}
+.price input.darkMode {
+  background: linear-gradient(
+    to right,
+    var(--color-brand-2) 0%,
+    var(--color-brand-2) 50%,
+    var(--color-gray-4) 50%,
+    var(--color-gray-4) 100%
+  );
+}
+.price input.darkMode::-webkit-slider-thumb {
+  border-color: var(--color-brand-2);
 }
