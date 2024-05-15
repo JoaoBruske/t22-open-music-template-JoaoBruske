@@ -1,4 +1,5 @@
 import { applyInputRangeStyle } from "./inputRange.js";
+import { ultimoSelecionado } from "./filtro.js";
 
 export function theme() {
   /* Verifica se há um tema salvo */
@@ -15,16 +16,18 @@ const themeButton = document.querySelector("header button");
 themeButton.addEventListener("click", () => {
   const elementos = document.querySelectorAll("[data-theme]");
   const theme = localStorage.getItem("openMusicTheme");
-  console.log(theme);
+
   if (theme != "dark") {
     localStorage.setItem("openMusicTheme", "dark");
     elementos.forEach((elemento) => elemento.classList.toggle("darkMode"));
-    console.log("entrou 1");
+    ultimoSelecionado.classList.remove("blurLight");
+    ultimoSelecionado.classList.add("blurDark");
   } else {
-    console.log("entrou 2 ");
     localStorage.setItem("openMusicTheme", "light");
     elementos.forEach((elemento) => {
       elemento.classList.toggle("darkMode");
+      ultimoSelecionado.classList.remove("blurDark");
+      ultimoSelecionado.classList.add("blurLight");
     });
   }
   applyInputRangeStyle();

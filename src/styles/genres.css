@@ -58,3 +58,15 @@
   border-color: var(--color-gray-7);
   color: var(--color-gray-2);
 }
+
+.genres ul li button.blurLight{
+  background-color: var(--color-gray-2);
+  border-color: var(--color-gray-2);
+  color: var(--color-gray-7);
+}
+
+.genres ul li button.blurDark {
+  background-color: var(--color-gray-7);
+  border-color: var(--color-gray-7);
+  color: var(--color-gray-2);
+}
